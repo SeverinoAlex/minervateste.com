@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minerva Community</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+background:#0b0b0b;
+color:white;
+overflow-x:hidden;
+}
+
+header{
+position:fixed;
+width:100%;
+top:0;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.7);
+backdrop-filter:blur(10px);
+z-index:999;
+}
+
+.logo{
+font-size:28px;
+font-weight:800;
+color:#53FC18;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+margin-left:25px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#53FC18;
+}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:0 20px;
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.8)),
+url('assets/banner.jpg');
+background-size:cover;
+background-position:center;
+}
+
+.hero-content h1{
+font-size:5rem;
+font-weight:800;
+}
+
+.hero-content span{
+color:#53FC18;
+}
+
+.hero-content p{
+margin-top:20px;
+font-size:1.2rem;
+max-width:700px;
+opacity:.8;
+}
+
+.buttons{
+margin-top:35px;
+}
+
+.btn{
+padding:15px 30px;
+border-radius:12px;
+text-decoration:none;
+font-weight:700;
+margin:10px;
+display:inline-block;
+transition:.3s;
+}
+
+.primary{
+background:#53FC18;
+color:black;
+}
+
+.secondary{
+border:2px solid #53FC18;
+color:#53FC18;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+}
+
+.stats{
+padding:100px 8%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#121212;
+padding:35px;
+border-radius:20px;
+text-align:center;
+border:1px solid #1e1e1e;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+border-color:#53FC18;
+}
+
+.card h2{
+font-size:2.5rem;
+color:#53FC18;
+}
+
+.card p{
+margin-top:10px;
+opacity:.8;
+}
+
+.about{
+padding:120px 8%;
+text-align:center;
+}
+
+.about h2{
+font-size:3rem;
+margin-bottom:20px;
+}
+
+.about p{
+max-width:900px;
+margin:auto;
+line-height:1.8;
+opacity:.8;
+}
+
+.clips{
+padding:120px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:3rem;
+margin-bottom:60px;
+}
+
+.clip-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.clip{
+background:#121212;
+border-radius:20px;
+overflow:hidden;
+}
+
+.clip iframe{
+width:100%;
+height:250px;
+}
+
+.clip h3{
+padding:20px;
+}
+
+.community{
+padding:120px 8%;
+text-align:center;
+}
+
+.community-box{
+background:#121212;
+padding:60px;
+border-radius:25px;
+max-width:900px;
+margin:auto;
+}
+
+.community-box h2{
+margin-bottom:20px;
+}
+
+footer{
+padding:40px;
+text-align:center;
+border-top:1px solid #1d1d1d;
+opacity:.6;
+}
+
+.live-badge{
+display:inline-block;
+background:red;
+padding:8px 15px;
+border-radius:999px;
+font-weight:700;
+margin-bottom:20px;
+animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.08);}
+100%{transform:scale(1);}
+}
+
+</style>
+
+.perfil-minerva{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid #53FC18;
+margin-bottom:25px;
+box-shadow:0 0 30px rgba(83,252,24,.4);
+}
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">MINERVA</div> 
+
+<nav>
+<a href="#sobre">Sobre</a>
+<a href="#clips">Clips</a>
+<a href="#comunidade">Comunidade</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+<img src="assets/minerva.png" class="perfil-minerva">
+
+<div class="live-badge">
+🔴 AO VIVO NA KICK
+</div>
+
+<h1>Bem-vindo à <span>Comunidade Minerva</span></h1>
+
+<p>
+Acompanhe lives, melhores momentos, eventos especiais e faça parte da comunidade que cresce todos os dias.
+</p>
+
+<div class="buttons">
+
+<a class="btn primary"
+href="https://kick.com/minerva/about"
+target="_blank">
+Assistir Agora </a>
+
+<a class="btn secondary"
+href="#comunidade">
+Entrar na Comunidade </a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="card">
+<h2>100K+</h2>
+<p>Seguidores</p>
+</div>
+
+<div class="card">
+<h2>500+</h2>
+<p>Lives realizadas</p>
+</div>
+
+<div class="card">
+<h2>10M+</h2>
+<p>Visualizações</p>
+</div>
+
+</section>
+
+<section class="about" id="sobre">
+
+<h2>Sobre o Minerva</h2>
+
+<p>
+Criador de conteúdo, streamer e referência para milhares de espectadores.
+Este espaço foi criado para reunir toda a comunidade em um único lugar,
+com notícias, clips, agenda e acesso rápido às plataformas.
+</p>
+
+</section>
+
+<section class="clips" id="clips">
+
+<h2 class="section-title">
+Melhores Momentos
+</h2>
+
+<div class="clip-grid">
+
+<div class="clip">
+<iframe src="https://kick.com/minerva/clips/clip_01KVFHZJ5PVZWSZ51C3NB5QV65"></iframe>
+<h3>Clip Destaque #1</h3>
+</div>
+
+<div class="clip">
+<iframe src="https://kick.com/minerva/clips/clip_01KVKRQWXSNYNVJPKFDDD2S6FM"></iframe>
+<h3>Clip Destaque #2</h3>
+</div>
+
+<div class="clip">
+<iframe src="https://kick.com/minerva/clips/clip_01KV9KN1FM6NHETDDMCRA0D9QS"></iframe>
+<h3>Clip Destaque #3</h3>
+</div>
+
+</div>
+
+</section>
+
+<section class="community" id="comunidade">
+
+<div class="community-box">
+
+<h2>Junte-se à Comunidade</h2>
+
+<p>
+Participe das lives, acompanhe eventos especiais e interaja com outros membros da comunidade.
+</p>
+
+<br>
+
+<a class="btn primary"
+href="#">
+Entrar no Discord </a>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Comunidade Minerva
+
+</footer>
+
+</body>
+</html>
